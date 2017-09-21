@@ -3,22 +3,29 @@
 # =======================
 
 # Display Symfony CLI
-alias @sf='php app/console'
+alias @sf='echo "php app/console"
+php app/console'
 
 # Update Doctrine schema
-alias @dsu='php app/console doctrine:schema:update --force'
+alias @dsu='echo "php app/console doctrine:schema:update --force"
+php app/console doctrine:schema:update --force'
 
 # Create Doctrine entity
-alias @dge='php app/console doctrine:generate:entity'
+alias @dge='echo "php app/console doctrine:generate:entity"
+php app/console doctrine:generate:entity'
 
-# Clear cache
-alias @cc='php app/console cache:clear'
+# Cache clear
+alias @cc='echo "php app/console cache:clear"
+php app/console cache:clear'
 
-# Flush cache
-alias @cc='php app/console cache:flush'
+# Cache flush
+alias @cf='echo "php app/console cache:flush"
+php app/console cache:flush'
 
 # Remove cache and logs files
-alias @rc='rm -rf app/logs/* && rm -rf app/cache/*'
+alias @rc='echo -e "rm -rf app/logs/* && rm -rf app/cache/*"
+rm -rf app/logs/* && rm -rf app/cache/*'
 
 # Watch Apache error logs
-alias @w='tail -f /var/log/apache2/error.log'
+alias @w='echo -e "tail -f /var/log/apache2/error.log"
+tail -f /var/log/apache2/error.log'
