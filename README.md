@@ -9,6 +9,9 @@ Those alias are simply shortcut for commonely use Symfony 2.8 CLI commands.
 # Symfony 2.8 shell alias
 # =======================
 
+# Edit this file
+alias @e='nano ~/.bashrc'
+
 # Display Symfony CLI
 alias @sf='echo "php app/console"
 php app/console'
@@ -25,9 +28,9 @@ php app/console doctrine:generate:entity'
 alias @cc='echo "php app/console cache:clear"
 php app/console cache:clear'
 
-# Cache flush
-alias @cf='echo "php app/console cache:flush"
-php app/console cache:flush'
+# Cache clear prod env
+alias @ccp='echo "php app/console cache:clear --env=prod"
+php app/console cache:clear --env=prod'
 
 # Remove cache and logs files
 alias @rc='echo -e "rm -rf app/logs/* && rm -rf app/cache/*"
